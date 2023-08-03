@@ -1,0 +1,77 @@
+:root {
+  --font-primary: "Outfit";
+  --white: hsl(0, 0%, 100%);
+  --light_grey: hsl(212, 45%, 89%);
+  --grayish_blue: hsl(220, 15%, 55%);
+  --dark_blue: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: var(--font-primary);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+body .wrapper {
+  background-color: var(--grayish_blue);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .wrapper .card {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  padding: 0.75rem;
+}
+body .wrapper .card .title_1 {
+  color: var(--dark_blue);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.75rem;
+}
+body .wrapper .card .title_2 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (min-width: 760px) {
+  body .wrapper .card {
+    width: 13vw;
+  }
+  body .wrapper .card .scanner img {
+    width: 100%;
+    height: auto;
+  }
+  body .wrapper .card .title_1 {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+  }
+  body .wrapper .card .title_2 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 767px) {
+  body .wrapper .card {
+    width: 80vw !important;
+    align-items: center;
+    justify-content: center;
+  }
+  body .wrapper .card .scanner {
+    display: flex;
+    justify-content: center;
+  }
+  body .wrapper .card .scanner img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
